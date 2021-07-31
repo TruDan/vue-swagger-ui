@@ -1,4 +1,9 @@
 # swagger-ui-vue
+WIP.
+
+## Screenshots
+![home](screenshots/home.png)
+![operation](screenshots/operation.png)
 
 ## Project setup
 ```
