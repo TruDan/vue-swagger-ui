@@ -1,32 +1,24 @@
 <template>
   <div class="h-server-selector">
-      <v-select
-          :items="items"
-          v-model="activeItem"
-          label="Server"
-          hide-details
-      >
-
-      </v-select>
+    <v-select v-model="activeItem" :items="items" label="Server" hide-details />
   </div>
 </template>
 
 <script>
-import {mapActions, mapState} from "vuex";
+import { mapActions, mapState } from 'vuex';
 
 export default {
-  name: "HServerSelector",
-
+  name: 'HServerSelector',
 
   computed: {
-    ...mapState('openapi', ["currentServer", "servers"]),
+    ...mapState('openapi', ['currentServer', 'servers']),
 
     items() {
       return this.servers.map(server => ({
         ...server,
         text: server.url,
-        value: server.url
-      }))
+        value: server.url,
+      }));
     },
 
     activeItem: {
@@ -35,14 +27,14 @@ export default {
       },
       set(value) {
         this.chooseServer(this.servers.find(x => x.url === value));
-      }
-    }
+      },
+    },
   },
 
   methods: {
-    ...mapActions('openapi', ['chooseServer'])
-  }
-}
+    ...mapActions('openapi', ['chooseServer']),
+  },
+};
 </script>
 
 <style scoped>
