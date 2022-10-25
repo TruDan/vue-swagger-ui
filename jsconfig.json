@@ -1,11 +1,18 @@
 {
   "$schema": "https://json.schemastore.org/jsconfig.json",
-  "include": ["./src/**/*"],
   "compilerOptions": {
-    "module": "ES2022",
+    "newLine": "lf",
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "ScriptHost"],
+    "jsx": "preserve",
+    "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     }
-  }
+  },
+  "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist"],
+  "vueCompilerOptions": { "target": 2.7 }
 }

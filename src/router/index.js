@@ -1,9 +1,6 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
-import { OperationView } from '../views';
-
-Vue.use(VueRouter);
+import { createRouter } from '@logue/vue2-helpers/vue-router';
+import Home from '@/views/Home.vue';
+import OperationView from '@/views/OperationView.vue';
 
 const routes = [
   {
@@ -19,8 +16,4 @@ const routes = [
   },
 ];
 
-const router = new VueRouter({
-  routes,
-});
-
-export default router;
+export default createRouter({ routes });
