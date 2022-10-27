@@ -1,51 +1,49 @@
 <template>
   <v-list nav dense>
-
-    <v-list-group
-    v-for="tag of operationsByTag"
-    :key="tag"
-    >
+    <v-list-group v-for="tag of operationsByTag" :key="tag">
       <template #activator>
         <v-list-item-title>{{ tag.name }}</v-list-item-title>
       </template>
 
       <v-list-item
-          v-for="(operation, i) of tag.operations"
-          :key="i"
-          dense
-          :to="{name: 'operation', params: { operationId: operation.operationId || operation.id}}"
+        v-for="(operation, i) of tag.operations"
+        :key="i"
+        dense
+        :to="{
+          name: 'operation',
+          params: { operationId: operation.operationId || operation.id },
+        }"
       >
         <v-list-item-title>{{ operation.path }}</v-list-item-title>
         <div>
           <v-chip
-              class="h-chip__method"
-              :color="operation.method | chipColor"
-              label
+            class="h-chip__method"
+            :color="operation.method | chipColor"
+            label
           >
             {{ operation.method | upper }}
           </v-chip>
         </div>
       </v-list-item>
     </v-list-group>
-
   </v-list>
 </template>
 
 <script>
-import {mapState} from "vuex";
+import { mapState } from 'vuex';
 
 export default {
-  name: "HPathList",
+  name: 'HPathList',
 
   computed: {
     ...mapState('openapi', ['operations', 'tags']),
 
     operationsByTag() {
       return this.tags.map(tag => ({
-          ...tag,
-          operations: this.operations.filter(x => x.tags.includes(tag.name))
+        ...tag,
+        operations: this.operations.filter(x => x.tags.includes(tag.name)),
       }));
-    }
+    },
   },
 
   filters: {
@@ -61,11 +59,11 @@ export default {
         return 'error';
       }
       return 'default';
-    }
+    },
   },
 
-  methods: {}
-}
+  methods: {},
+};
 </script>
 
 <style scoped>
@@ -78,7 +76,7 @@ export default {
   /*margin-left: 0.5rem;*/
 }
 
-::v-deep .h-chip__method .v-chip__content{
+::v-deep .h-chip__method .v-chip__content {
   /*margin: 0.5rem 0.5rem 0.5rem 0.5rem !important;*/
 }
 </style>

@@ -1,5 +1,8 @@
+/**
+ *
+ */
 export function upper(text) {
-    return text.toUpperCase();
+  return text.toUpperCase();
 }
 
 export default upper;

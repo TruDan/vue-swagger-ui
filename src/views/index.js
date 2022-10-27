@@ -6,4 +6,3 @@ import OperationView from './OperationView.vue';
 
 export { About, Home, OperationView };
 export default { About, Home, OperationView };
-

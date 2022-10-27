@@ -1,21 +1,30 @@
-import Vue from 'vue';
-import Vuetify from 'vuetify/lib/framework';
+/** Vuetify Plugin */
+import { createVuetify } from '@logue/vue2-helpers/vuetify';
 
-Vue.use(Vuetify);
+/*
+// Locale
+import i18n from './i18n';
+import { en, ja } from 'vuetify/lib/locale';
+*/
 
-export default new Vuetify({
-    theme: {
-        dark: false,
-        options: {
-            customProperties: true
-        },
-        themes: {
-            dark: {
-                primary: "#ff9015"
-            },
-            light: {
-                primary: "#ff9015"
-            }
-        }
-    }
+import '@mdi/font/css/materialdesignicons.css';
+import { loadFonts } from './webfontloader';
+
+loadFonts();
+
+export default createVuetify({
+  theme: {
+    dark: false,
+    options: {
+      customProperties: true,
+    },
+    themes: {
+      dark: {
+        primary: '#ff9015',
+      },
+      light: {
+        primary: '#ff9015',
+      },
+    },
+  },
 });
