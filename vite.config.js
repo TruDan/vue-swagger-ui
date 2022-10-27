@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import { fileURLToPath } from 'url';
 import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill';
 import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill';
 import { visualizer } from 'rollup-plugin-visualizer';
@@ -8,6 +7,8 @@ import checker from 'vite-plugin-checker';
 import Components from 'unplugin-vue-components/vite';
 import rollupNodePolyFill from 'rollup-plugin-node-polyfills';
 import vue from '@vitejs/plugin-vue2';
+
+import { fileURLToPath, URL } from 'url';
 
 /**
  * Vite Configure

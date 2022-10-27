@@ -99,14 +99,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@es-joy/jsdoccomment@npm:~0.33.0":
-  version: 0.33.0
-  resolution: "@es-joy/jsdoccomment@npm:0.33.0"
+"@es-joy/jsdoccomment@npm:~0.33.4":
+  version: 0.33.4
+  resolution: "@es-joy/jsdoccomment@npm:0.33.4"
   dependencies:
     comment-parser: 1.3.1
     esquery: ^1.4.0
     jsdoc-type-pratt-parser: ~3.1.0
-  checksum: fe91f9d236fbae44b752b65d95fc6174f89f9b90b9a4cc270247f1f64ed1fe50b438f01303738677ee8c18e5746266bd65e3cba68708bf8190d503039e417f45
+  checksum: 711391f8dc2aad5ba2a2d1dc247dde3b6b20382b8d30747aa2c1266e1386bfccb57facb62c9c6e508bf1c5aeeaa53a32239a991f31e0e25543a8f987ca88cbc3
   languageName: node
   linkType: hard
 
@@ -214,57 +214,6 @@ __metadata:
   checksum: 2297fcd472ba810bffe8519d2249171132844c7174f3a16634f9260761c8c78bc0428a4190b5b6d72d45673c13918ab9844d706c3ed4ef8f62ab11a2627a08ad
   languageName: node
   linkType: hard
-
-"@logue/vue-swagger-ui@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@logue/vue-swagger-ui@workspace:."
-  dependencies:
-    "@esbuild-plugins/node-globals-polyfill": ^0.1.1
-    "@esbuild-plugins/node-modules-polyfill": ^0.1.4
-    "@logue/vue2-helpers": ^2.1.1
-    "@mdi/font": ^7.0.96
-    "@vitejs/plugin-vue2": ^2.0.0
-    "@vue/eslint-config-prettier": ^7.0.0
-    eslint: ^8.26.0
-    eslint-config-google: ^0.14.0
-    eslint-import-resolver-alias: ^1.1.2
-    eslint-plugin-html: ^7.1.0
-    eslint-plugin-import: ^2.26.0
-    eslint-plugin-jsdoc: ^39.3.24
-    eslint-plugin-json: ^3.1.0
-    eslint-plugin-vue: ^9.6.0
-    eslint-plugin-vuejs-accessibility: ^1.2.0
-    eslint-plugin-vuetify: ^1.1.0
-    eslint-plugin-yaml: ^0.5.0
-    husky: ^8.0.1
-    lint-staged: ^13.0.3
-    oas-normalize: ^7.1.0
-    postcss: ^8.4.18
-    postcss-html: ^1.5.0
-    postcss-scss: ^4.0.5
-    prettier: ^2.7.1
-    reflect-metadata: ^0.1.13
-    rimraf: ^3.0.2
-    rollup-plugin-visualizer: ^5.8.3
-    sass: 1.32.12
-    stylelint: ^14.14.0
-    stylelint-config-prettier: ^9.0.3
-    stylelint-config-recommended-scss: ^8.0.0
-    stylelint-config-recommended-vue: ^1.4.0
-    stylelint-order: ^5.0.0
-    unplugin-vue-components: ^0.22.9
-    vite: ^3.1.8
-    vite-plugin-checker: ^0.5.1
-    vue: ^2.7.13
-    vue-eslint-parser: ^9.1.0
-    vue-json-viewer: ^2.2.22
-    vue-markdown-render: ^1.1.3
-    vue-router: ^3.6.5
-    vuetify: ^2.6.12
-    vuex: ^3.6.2
-    webfontloader: ^1.6.28
-  languageName: unknown
-  linkType: soft
 
 "@logue/vue2-helpers@npm:^2.1.1":
   version: 2.1.1
@@ -1838,11 +1787,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsdoc@npm:^39.3.24":
-  version: 39.3.24
-  resolution: "eslint-plugin-jsdoc@npm:39.3.24"
+"eslint-plugin-jsdoc@npm:^39.3.25":
+  version: 39.3.25
+  resolution: "eslint-plugin-jsdoc@npm:39.3.25"
   dependencies:
-    "@es-joy/jsdoccomment": ~0.33.0
+    "@es-joy/jsdoccomment": ~0.33.4
     comment-parser: 1.3.1
     debug: ^4.3.4
     escape-string-regexp: ^4.0.0
@@ -1851,7 +1800,7 @@ __metadata:
     spdx-expression-parse: ^3.0.1
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0
-  checksum: 2d6149a48903502f61c0c5d06944d5a46789a1c38d4999a42f0bd32129e4c66cbc470df8cae7d5d1a730b8dad3e06c9d869ba8abd3d6e08eaa1a5cd39464b7b4
+  checksum: 2e5447e65c26a76724eb1c297c84d3f96d6994c3588ff94e4333b8845ec975792b507d1cfb99e1e7da7efbe1b2ec9210fc7200a0e7c356ac176d4ae5198826c2
   languageName: node
   linkType: hard
 
@@ -4215,7 +4164,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.3.11, postcss@npm:^8.4.0, postcss@npm:^8.4.14, postcss@npm:^8.4.16, postcss@npm:^8.4.17, postcss@npm:^8.4.18":
+"postcss@npm:^8.3.11, postcss@npm:^8.4.0, postcss@npm:^8.4.14, postcss@npm:^8.4.17, postcss@npm:^8.4.18":
   version: 8.4.18
   resolution: "postcss@npm:8.4.18"
   dependencies:
@@ -4543,9 +4492,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:~2.78.0":
-  version: 2.78.1
-  resolution: "rollup@npm:2.78.1"
+"rollup@npm:^2.79.1":
+  version: 2.79.1
+  resolution: "rollup@npm:2.79.1"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -4553,7 +4502,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 9034814383ca5bdb4bea6d499270aeb31cdb0bb884f81b0c6a1d19c63cc973f040e6ee09b7af8a7169dd231c090f4b44ef8b99c4bfdf884aceeb3dcefb8cfa14
+  checksum: 6a2bf167b3587d4df709b37d149ad0300692cc5deb510f89ac7bdc77c8738c9546ae3de9322b0968e1ed2b0e984571f5f55aae28fa7de4cfcb1bc5402a4e2be6
   languageName: node
   linkType: hard
 
@@ -5507,19 +5456,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.1.8":
-  version: 3.1.8
-  resolution: "vite@npm:3.1.8"
+"vite@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "vite@npm:3.2.0"
   dependencies:
     esbuild: ^0.15.9
     fsevents: ~2.3.2
-    postcss: ^8.4.16
+    postcss: ^8.4.18
     resolve: ^1.22.1
-    rollup: ~2.78.0
+    rollup: ^2.79.1
   peerDependencies:
     less: "*"
     sass: "*"
     stylus: "*"
+    sugarss: "*"
     terser: ^5.4.0
   dependenciesMeta:
     fsevents:
@@ -5531,11 +5481,13 @@ __metadata:
       optional: true
     stylus:
       optional: true
+    sugarss:
+      optional: true
     terser:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 982696ad134577dd9915c4c3548ad36ddcf5dc6d341058548a670a13d860e4cdaaf2b320a59221f178018df089d148b9980e9a344316bef12b698a1c1abc7390
+  checksum: 2b3acfe74549c4be2d35786b40f253fa8ba53d8a7b29d1b7397f0536ab6a831e9cdbd27c628265fc2ddcf5c616254022d2c9cbd2a0e2b0443cf0c14455e101d6
   languageName: node
   linkType: hard
 
@@ -5703,6 +5655,57 @@ __metadata:
   checksum: b014ba4cba6838a4a6b7a2352b18982c2fd8bbbd6287e09c510845895d28f1c141fefb88369d1875c0cb6c7336c8536f614c8d1f5ac1c8709d60b4f945c486fb
   languageName: node
   linkType: hard
+
+"vue-swagger-ui@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "vue-swagger-ui@workspace:."
+  dependencies:
+    "@esbuild-plugins/node-globals-polyfill": ^0.1.1
+    "@esbuild-plugins/node-modules-polyfill": ^0.1.4
+    "@logue/vue2-helpers": ^2.1.1
+    "@mdi/font": ^7.0.96
+    "@vitejs/plugin-vue2": ^2.0.0
+    "@vue/eslint-config-prettier": ^7.0.0
+    eslint: ^8.26.0
+    eslint-config-google: ^0.14.0
+    eslint-import-resolver-alias: ^1.1.2
+    eslint-plugin-html: ^7.1.0
+    eslint-plugin-import: ^2.26.0
+    eslint-plugin-jsdoc: ^39.3.25
+    eslint-plugin-json: ^3.1.0
+    eslint-plugin-vue: ^9.6.0
+    eslint-plugin-vuejs-accessibility: ^1.2.0
+    eslint-plugin-vuetify: ^1.1.0
+    eslint-plugin-yaml: ^0.5.0
+    husky: ^8.0.1
+    lint-staged: ^13.0.3
+    oas-normalize: ^7.1.0
+    postcss: ^8.4.18
+    postcss-html: ^1.5.0
+    postcss-scss: ^4.0.5
+    prettier: ^2.7.1
+    reflect-metadata: ^0.1.13
+    rimraf: ^3.0.2
+    rollup-plugin-visualizer: ^5.8.3
+    sass: 1.32.12
+    stylelint: ^14.14.0
+    stylelint-config-prettier: ^9.0.3
+    stylelint-config-recommended-scss: ^8.0.0
+    stylelint-config-recommended-vue: ^1.4.0
+    stylelint-order: ^5.0.0
+    unplugin-vue-components: ^0.22.9
+    vite: ^3.2.0
+    vite-plugin-checker: ^0.5.1
+    vue: ^2.7.13
+    vue-eslint-parser: ^9.1.0
+    vue-json-viewer: ^2.2.22
+    vue-markdown-render: ^1.1.3
+    vue-router: ^3.6.5
+    vuetify: ^2.6.12
+    vuex: ^3.6.2
+    webfontloader: ^1.6.28
+  languageName: unknown
+  linkType: soft
 
 "vue@npm:^2.6.14, vue@npm:^2.7.13":
   version: 2.7.13

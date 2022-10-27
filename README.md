@@ -1,4 +1,4 @@
-# @logue/swagger-ui-vue
+# swagger-ui-vue
 
 WIP.
 
